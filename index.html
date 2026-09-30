@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>مؤسسة حسن محمد الكبرى للتجارة | HMK TRADING</title>
+  <meta name="description" content="مؤسسة حسن محمد الكبرى للتجارة (HMK TRADING)، مؤسسة سعودية تطوّر وتشغّل التطبيقات والمنصات الإلكترونية: ماي كير للعناية بالجسم والبشرة، وسوق الإبل للمزادات وبيع الإبل." />
+  <link rel="icon" href="assets/favicon.png" />
+  <meta property="og:title" content="مؤسسة حسن محمد الكبرى للتجارة | HMK TRADING" />
+  <meta property="og:description" content="مؤسسة سعودية تطوّر وتشغّل التطبيقات والمنصات الإلكترونية: ماي كير وسوق الإبل." />
+  <meta property="og:image" content="assets/icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&family=Readex+Pro:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    :root { --wine:#521C2B; --wine-deep:#3D1420; --wine-mid:#6B273B; --gold:#C4A24E; --gold-light:#DCBF6E; --pink:#F3D8E5; --cream:#F7EFE9; --ink:#2A1A1F; --muted:#8C6F78; --sand:#8B6B3F; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:'Readex Pro', system-ui, sans-serif; color:#fff; background:var(--wine); line-height:1.7; }
+    a { color:inherit; }
+    h1,h2,h3 { font-family:'El Messiri', 'Readex Pro', sans-serif; margin:0; line-height:1.3; }
+    .wrap { width:min(1080px, 100% - 32px); margin-inline:auto; }
+    header { position:sticky; top:0; z-index:9; background:rgba(61,20,32,.92); backdrop-filter:blur(8px); border-bottom:1px solid rgba(196,162,78,.35); }
+    header .wrap { display:flex; align-items:center; justify-content:space-between; gap:16px; padding:12px 0; }
+    .brand { display:flex; align-items:center; gap:12px; font-family:'El Messiri'; font-size:18px; }
+    .brand small { display:block; font-family:'Readex Pro'; font-size:11px; color:var(--gold-light); letter-spacing:1px; }
+    .brand .mark { width:40px; height:40px; border-radius:10px; background:var(--gold); color:var(--wine-deep); display:grid; place-items:center; font-family:'Readex Pro'; font-weight:700; font-size:13px; letter-spacing:.5px; }
+    nav { display:flex; gap:18px; font-size:14px; flex-wrap:wrap; }
+    nav a { text-decoration:none; color:var(--pink); }
+    nav a:hover { color:var(--gold-light); }
+    .hero { position:relative; overflow:hidden; background:var(--wine-deep); }
+    .hero::before { content:""; position:absolute; inset:0; background:url(assets/silk.jpg) center/cover; opacity:.3; }
+    .hero::after { content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(61,20,32,.25), var(--wine-deep)); }
+    .hero .wrap { position:relative; padding:72px 0 60px; text-align:center; }
+    .hero h1 { font-size:clamp(30px, 4.6vw, 54px); color:#fff; }
+    .hero .en-name { font-family:'Readex Pro'; font-weight:700; letter-spacing:3px; color:var(--gold-light); font-size:clamp(14px, 1.6vw, 18px); margin-top:8px; }
+    .hero p { font-size:18px; color:var(--pink); max-width:640px; margin:18px auto 0; }
+    .eyebrow { color:var(--gold-light); font-weight:700; letter-spacing:.5px; font-size:14px; margin-bottom:10px; }
+    .cta { display:inline-flex; align-items:center; gap:8px; background:var(--gold); color:var(--wine-deep); font-weight:700; text-decoration:none; padding:12px 22px; border-radius:999px; margin-top:22px; }
+    .cta.ghost { background:transparent; color:var(--pink); border:1px solid rgba(243,216,229,.5); margin-inline-start:8px; }
+    section { padding:64px 0; }
+    .title { display:flex; align-items:center; gap:14px; margin-bottom:28px; }
+    .title h2 { font-size:28px; color:var(--gold-light); white-space:nowrap; }
+    .title::after { content:""; flex:1; height:1px; background:rgba(196,162,78,.4); }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:16px; }
+    .card { background:var(--wine-mid); border:1px solid rgba(196,162,78,.35); border-radius:20px; padding:22px; }
+    .card h3 { font-size:19px; color:#fff; margin-bottom:6px; }
+    .card p { margin:0; color:var(--pink); font-size:15px; }
+    .light { background:var(--cream); color:var(--ink); }
+    .light .title h2 { color:var(--wine); }
+    .light .card { background:#fff; border-color:rgba(82,28,43,.12); }
+    .light .card h3 { color:var(--wine); }
+    .light .card p { color:var(--muted); }
+    /* apps */
+    .app { display:grid; grid-template-columns:1.05fr .95fr; gap:28px; align-items:center; background:#fff; border:1px solid rgba(82,28,43,.12); border-radius:26px; padding:28px; margin-bottom:22px; }
+    .app.alt { direction:rtl; }
+    .app .head { display:flex; align-items:center; gap:14px; margin-bottom:10px; }
+    .app .head img { width:64px; height:64px; border-radius:16px; box-shadow:0 8px 20px rgba(0,0,0,.15); }
+    .app h3 { font-size:26px; color:var(--wine); }
+    .app .sub { color:var(--muted); font-size:14px; margin:0; }
+    .app p { color:var(--ink); font-size:15px; }
+    .app ul { margin:10px 0 0; padding-inline-start:18px; color:var(--ink); font-size:14px; }
+    .app li { margin:4px 0; }
+    .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:16px; }
+    .btn { display:inline-flex; align-items:center; gap:8px; text-decoration:none; padding:10px 16px; border-radius:999px; font-weight:700; font-size:14px; background:var(--wine); color:#fff; }
+    .btn.soft { background:var(--pink); color:var(--wine); }
+    .btn.disabled { background:#eee; color:#999; }
+    .shots { display:flex; gap:12px; justify-content:center; }
+    .shots img { width:31%; max-width:180px; border-radius:22px; border:1px solid rgba(82,28,43,.15); box-shadow:0 14px 30px rgba(0,0,0,.18); }
+    dl { display:grid; grid-template-columns:max-content 1fr; gap:8px 24px; margin:0; }
+    dt { color:var(--gold); font-weight:700; }
+    dd { margin:0; }
+    .en { direction:ltr; text-align:left; }
+    footer { background:var(--wine-deep); border-top:1px solid rgba(196,162,78,.35); padding:28px 0; font-size:14px; color:var(--pink); }
+    footer .wrap { display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+    footer a { color:var(--gold-light); text-decoration:none; margin-inline-start:14px; }
+    @media (max-width:820px) { .app { grid-template-columns:1fr; } nav { display:none; } .shots img { width:30%; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="brand"><div class="mark">HMK</div><div>مؤسسة حسن محمد الكبرى للتجارة<small>HMK TRADING</small></div></div>
+      <nav>
+        <a href="#activity">النشاط</a>
+        <a href="#apps">التطبيقات</a>
+        <a href="#company">عن المؤسسة</a>
+        <a href="#contact">تواصل</a>
+        <a href="#en">English</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="hero">
+    <div class="wrap">
+      <div class="eyebrow">مؤسسة سعودية لتطوير وتشغيل التطبيقات والمنصات الإلكترونية</div>
+      <h1>مؤسسة حسن محمد الكبرى للتجارة</h1>
+      <div class="en-name">HMK TRADING</div>
+      <p>نبني ونشغّل منتجات رقمية سعودية تخدم قطاعات مختلفة: من العناية الصحية والجمالية للمرأة، إلى أسواق المزادات وبيع الإبل وخدماتها.</p>
+      <a class="cta" href="#apps">تطبيقاتنا</a>
+      <a class="cta ghost" href="#contact">تواصل معنا</a>
+    </div>
+  </div>
+
+  <section id="activity">
+    <div class="wrap">
+      <div class="title"><h2>نشاط المؤسسة</h2></div>
+      <div class="grid">
+        <div class="card"><h3>تطوير التطبيقات</h3><p>تصميم وبرمجة تطبيقات الجوال (iOS وأندرويد) والويب، من الفكرة إلى النشر في المتاجر.</p></div>
+        <div class="card"><h3>تشغيل المنصات الإلكترونية</h3><p>إدارة أسواق إلكترونية ومنصات اشتراك، مع أنظمة الدفع والإشعارات والدعم وحماية المستخدمين.</p></div>
+        <div class="card"><h3>الخدمات الرقمية بالاشتراك</h3><p>باقات اشتراك للخدمات الصحية والجمالية تُقدَّم عبر مختصات معتمدات داخل التطبيق.</p></div>
+        <div class="card"><h3>الأسواق والمزادات الإلكترونية</h3><p>منصات لبيع وشراء الإبل بالمزاد العلني أو السعر الثابت، وربط البائعين بمقدمي النقل والخدمات.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="apps" class="light">
+    <div class="wrap">
+      <div class="title"><h2>التطبيقات التابعة للمؤسسة</h2></div>
+
+      <div class="app">
+        <div>
+          <div class="head"><img src="assets/icon.png" alt="" /><div><h3>ماي كير · MY CARE</h3><p class="sub">عناية متكاملة بالجسم والبشرة</p></div></div>
+          <p>اشتراك يُسند للعضوة فريقاً خاصاً من مدربة لياقة وتغذية وأخصائية بشرة معتمدتين، مع خطة أسبوعية ومتابعة يومية وشات خاص ومحمي، ومجتمع نسائي مغلق، وسوق «ماي بيوتي» لخدمات الجمال المنزلية.</p>
+          <ul>
+            <li>مطابقة ذكية مع الفريق بحسب استبيان الاحتياجات.</li>
+            <li>سجل تطور البشرة والمقاسات محمي برمز وبصمة.</li>
+            <li>حجز مصففات شعر وفنانات مكياج بتقييمات حقيقية.</li>
+          </ul>
+          <div class="links">
+            <a class="btn" href="https://ndo-care.expo.app" target="_blank" rel="noopener">النسخة الإلكترونية</a>
+            <span class="btn disabled">App Store · قريباً</span>
+            <span class="btn disabled">Google Play · قريباً</span>
+          </div>
+        </div>
+        <div class="shots">
+          <img src="assets/01-home.jpg" alt="ماي كير: الرئيسية" loading="lazy" />
+          <img src="assets/02-tasks.jpg" alt="ماي كير: مهام اليوم" loading="lazy" />
+          <img src="assets/06-chat.jpg" alt="ماي كير: الشات" loading="lazy" />
+        </div>
+      </div>
+
+      <div class="app">
+        <div>
+          <div class="head"><img src="assets/souq-icon.jpg" alt="" /><div><h3>سوق الإبل · Souq Al-Ibl</h3><p class="sub">مزادات وبيع الإبل ونقلها وخدماتها</p></div></div>
+          <p>سوق إلكتروني تُباع فيه الإبل من مرابعها: عروض من كل مناطق المملكة، مزادات علنية شفافة أو بيع فوري بسعر ثابت، وحجز نقل بالشيول من ناقلين موثّقين، كل ذلك من الجوال.</p>
+          <ul>
+            <li>مزادات علنية: اسم كل مزايد ومبلغه ظاهران، بلا مساومة خفية.</li>
+            <li>تصفية حسب السلالة والمنطقة والأقرب إليك، وبحث صوتي.</li>
+            <li>طلبات نقل الإبل، بلاغات الضوال، ومستلزمات بيطرية وأعلاف من مزودين موثّقين.</li>
+          </ul>
+          <div class="links">
+            <a class="btn" href="https://apps.apple.com/sa/app/souq-al-ibl-camel-auctions/id6810638020" target="_blank" rel="noopener">App Store</a>
+            <a class="btn soft" href="https://souq-al-ibl.expo.app" target="_blank" rel="noopener">النسخة الإلكترونية</a>
+            <span class="btn disabled">Google Play · قريباً</span>
+          </div>
+        </div>
+        <div class="shots">
+          <img src="assets/souq-01.jpg" alt="سوق الإبل: الرئيسية" loading="lazy" />
+          <img src="assets/souq-02.jpg" alt="سوق الإبل: المزادات" loading="lazy" />
+          <img src="assets/souq-03.jpg" alt="سوق الإبل: إضافة عرض" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="company">
+    <div class="wrap">
+      <div class="title"><h2>عن المؤسسة</h2></div>
+      <div class="card" style="max-width:760px;">
+        <dl>
+          <dt>الاسم</dt><dd>مؤسسة حسن محمد الكبرى للتجارة</dd>
+          <dt>الاسم التجاري</dt><dd>HMK TRADING</dd>
+          <dt>النشاط</dt><dd>تطوير وتشغيل التطبيقات والمنصات الإلكترونية والأسواق والمزادات الإلكترونية</dd>
+          <dt>المقر</dt><dd>المملكة العربية السعودية</dd>
+          <dt>المنتجات</dt><dd>ماي كير (MY CARE) · سوق الإبل (Souq Al-Ibl)</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="light">
+    <div class="wrap">
+      <div class="title"><h2>تواصل معنا</h2></div>
+      <div class="grid">
+        <div class="card"><h3>البريد الإلكتروني</h3><p><a href="mailto:hassanaldoosri@gmail.com">hassanaldoosri@gmail.com</a></p></div>
+        <div class="card"><h3>دعم ماي كير</h3><p><a href="https://ndo-care.expo.app/support" target="_blank" rel="noopener">صفحة الدعم والمساعدة</a> · <a href="https://ndo-care.expo.app/privacy" target="_blank" rel="noopener">الخصوصية</a> · <a href="https://ndo-care.expo.app/terms" target="_blank" rel="noopener">الشروط</a></p></div>
+        <div class="card"><h3>سوق الإبل</h3><p><a href="https://souq-al-ibl.expo.app" target="_blank" rel="noopener">souq-al-ibl.expo.app</a></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="en" class="en">
+    <div class="wrap">
+      <div class="title"><h2>Hassan Mohammed Alkubra Trading Est. (HMK TRADING)</h2></div>
+      <p style="max-width:760px; color:var(--pink); margin:0 0 12px;">A Saudi company that builds and operates mobile apps and online platforms. Our products: <strong>MY CARE</strong>, a body-and-skin care subscription that pairs each member with a certified fitness coach and a skincare specialist; and <strong>Souq Al-Ibl</strong>, a camel marketplace with transparent public auctions, fixed-price sales and transport booking.</p>
+      <p style="color:var(--gold-light); font-weight:700;">Souq Al-Ibl is on the <a href="https://apps.apple.com/sa/app/souq-al-ibl-camel-auctions/id6810638020">App Store</a>. MY CARE is coming soon to the App Store and Google Play (web: <a href="https://ndo-care.expo.app">ndo-care.expo.app</a>).</p>
+      <p style="color:var(--pink); font-size:14px;">Contact: <a href="mailto:hassanaldoosri@gmail.com">hassanaldoosri@gmail.com</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <span>© 2026 مؤسسة حسن محمد الكبرى للتجارة · HMK TRADING. جميع الحقوق محفوظة.</span>
+      <span><a href="https://ndo-care.expo.app/privacy">الخصوصية</a><a href="https://ndo-care.expo.app/terms">الشروط</a><a href="#contact">تواصل</a></span>
+    </div>
+  </footer>
+</body>
+</html>
