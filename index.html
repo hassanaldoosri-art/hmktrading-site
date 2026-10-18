@@ -1,208 +1,770 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>مؤسسة حسن محمد الكبرى للتجارة | HMK TRADING</title>
-  <meta name="description" content="مؤسسة حسن محمد الكبرى للتجارة (HMK TRADING)، مؤسسة سعودية تطوّر وتشغّل التطبيقات والمنصات الإلكترونية: ماي كير للعناية بالجسم والبشرة، وسوق الإبل للمزادات وبيع الإبل." />
-  <link rel="icon" href="assets/favicon.png" />
-  <meta property="og:title" content="مؤسسة حسن محمد الكبرى للتجارة | HMK TRADING" />
-  <meta property="og:description" content="مؤسسة سعودية تطوّر وتشغّل التطبيقات والمنصات الإلكترونية: ماي كير وسوق الإبل." />
-  <meta property="og:image" content="assets/icon.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&family=Readex+Pro:wght@400;500;700&display=swap" rel="stylesheet" />
-  <style>
-    :root { --wine:#521C2B; --wine-deep:#3D1420; --wine-mid:#6B273B; --gold:#C4A24E; --gold-light:#DCBF6E; --pink:#F3D8E5; --cream:#F7EFE9; --ink:#2A1A1F; --muted:#8C6F78; --sand:#8B6B3F; }
-    * { box-sizing:border-box; }
-    html { scroll-behavior:smooth; }
-    body { margin:0; font-family:'Readex Pro', system-ui, sans-serif; color:#fff; background:var(--wine); line-height:1.7; }
-    a { color:inherit; }
-    h1,h2,h3 { font-family:'El Messiri', 'Readex Pro', sans-serif; margin:0; line-height:1.3; }
-    .wrap { width:min(1080px, 100% - 32px); margin-inline:auto; }
-    header { position:sticky; top:0; z-index:9; background:rgba(61,20,32,.92); backdrop-filter:blur(8px); border-bottom:1px solid rgba(196,162,78,.35); }
-    header .wrap { display:flex; align-items:center; justify-content:space-between; gap:16px; padding:12px 0; }
-    .brand { display:flex; align-items:center; gap:12px; font-family:'El Messiri'; font-size:18px; }
-    .brand small { display:block; font-family:'Readex Pro'; font-size:11px; color:var(--gold-light); letter-spacing:1px; }
-    .brand .mark { width:40px; height:40px; border-radius:10px; background:var(--gold); color:var(--wine-deep); display:grid; place-items:center; font-family:'Readex Pro'; font-weight:700; font-size:13px; letter-spacing:.5px; }
-    nav { display:flex; gap:18px; font-size:14px; flex-wrap:wrap; }
-    nav a { text-decoration:none; color:var(--pink); }
-    nav a:hover { color:var(--gold-light); }
-    .hero { position:relative; overflow:hidden; background:var(--wine-deep); }
-    .hero::before { content:""; position:absolute; inset:0; background:url(assets/silk.jpg) center/cover; opacity:.3; }
-    .hero::after { content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(61,20,32,.25), var(--wine-deep)); }
-    .hero .wrap { position:relative; padding:72px 0 60px; text-align:center; }
-    .hero h1 { font-size:clamp(30px, 4.6vw, 54px); color:#fff; }
-    .hero .en-name { font-family:'Readex Pro'; font-weight:700; letter-spacing:3px; color:var(--gold-light); font-size:clamp(14px, 1.6vw, 18px); margin-top:8px; }
-    .hero p { font-size:18px; color:var(--pink); max-width:640px; margin:18px auto 0; }
-    .eyebrow { color:var(--gold-light); font-weight:700; letter-spacing:.5px; font-size:14px; margin-bottom:10px; }
-    .cta { display:inline-flex; align-items:center; gap:8px; background:var(--gold); color:var(--wine-deep); font-weight:700; text-decoration:none; padding:12px 22px; border-radius:999px; margin-top:22px; }
-    .cta.ghost { background:transparent; color:var(--pink); border:1px solid rgba(243,216,229,.5); margin-inline-start:8px; }
-    section { padding:64px 0; }
-    .title { display:flex; align-items:center; gap:14px; margin-bottom:28px; }
-    .title h2 { font-size:28px; color:var(--gold-light); white-space:nowrap; }
-    .title::after { content:""; flex:1; height:1px; background:rgba(196,162,78,.4); }
-    .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:16px; }
-    .card { background:var(--wine-mid); border:1px solid rgba(196,162,78,.35); border-radius:20px; padding:22px; }
-    .card h3 { font-size:19px; color:#fff; margin-bottom:6px; }
-    .card p { margin:0; color:var(--pink); font-size:15px; }
-    .light { background:var(--cream); color:var(--ink); }
-    .light .title h2 { color:var(--wine); }
-    .light .card { background:#fff; border-color:rgba(82,28,43,.12); }
-    .light .card h3 { color:var(--wine); }
-    .light .card p { color:var(--muted); }
-    /* apps */
-    .app { display:grid; grid-template-columns:1.05fr .95fr; gap:28px; align-items:center; background:#fff; border:1px solid rgba(82,28,43,.12); border-radius:26px; padding:28px; margin-bottom:22px; }
-    .app.alt { direction:rtl; }
-    .app .head { display:flex; align-items:center; gap:14px; margin-bottom:10px; }
-    .app .head img { width:64px; height:64px; border-radius:16px; box-shadow:0 8px 20px rgba(0,0,0,.15); }
-    .app h3 { font-size:26px; color:var(--wine); }
-    .app .sub { color:var(--muted); font-size:14px; margin:0; }
-    .app p { color:var(--ink); font-size:15px; }
-    .app ul { margin:10px 0 0; padding-inline-start:18px; color:var(--ink); font-size:14px; }
-    .app li { margin:4px 0; }
-    .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:16px; }
-    .btn { display:inline-flex; align-items:center; gap:8px; text-decoration:none; padding:10px 16px; border-radius:999px; font-weight:700; font-size:14px; background:var(--wine); color:#fff; }
-    .btn.soft { background:var(--pink); color:var(--wine); }
-    .btn.disabled { background:#eee; color:#999; }
-    .shots { display:flex; gap:12px; justify-content:center; }
-    .shots img { width:31%; max-width:180px; border-radius:22px; border:1px solid rgba(82,28,43,.15); box-shadow:0 14px 30px rgba(0,0,0,.18); }
-    dl { display:grid; grid-template-columns:max-content 1fr; gap:8px 24px; margin:0; }
-    dt { color:var(--gold); font-weight:700; }
-    dd { margin:0; }
-    .en { direction:ltr; text-align:left; }
-    footer { background:var(--wine-deep); border-top:1px solid rgba(196,162,78,.35); padding:28px 0; font-size:14px; color:var(--pink); }
-    footer .wrap { display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; }
-    footer a { color:var(--gold-light); text-decoration:none; margin-inline-start:14px; }
-    @media (max-width:820px) { .app { grid-template-columns:1fr; } nav { display:none; } .shots img { width:30%; } }
-  </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>HMK TRADING | مؤسسة حسن محمد الكبرى للتجارة</title>
+<meta name="description" content="مؤسسة حسن محمد الكبرى للتجارة (HMK TRADING): مؤسسة سعودية في التجارة العامة وتصميم وبرمجة المواقع والتطبيقات، ومن تطويرها تطبيقات ماي كير وسوق الإبل والأذان والصلاة." />
+<meta name="theme-color" content="#0b1f3a" />
+<link rel="canonical" href="https://hmktrading.com/" />
+<link rel="icon" type="image/png" href="assets/favicon.png" />
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://hmktrading.com/" />
+<meta property="og:title" content="HMK TRADING | مؤسسة حسن محمد الكبرى للتجارة" />
+<meta property="og:description" content="مؤسسة سعودية في التجارة العامة وتطوير المواقع والتطبيقات: ماي كير، سوق الإبل، الأذان والصلاة." />
+<meta property="og:image" content="https://hmktrading.com/assets/og.jpg" />
+<meta property="og:locale" content="ar_SA" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=apps,arrow_forward,badge,check_circle,close,devices,domain,inventory_2,language,location_on,mail,menu,open_in_new,phone_iphone,rocket_launch,send,shield,storefront,support_agent,translate,verified,visibility,workspace_premium&display=block" rel="stylesheet" />
+<link href="assets/styles.css" rel="stylesheet" />
+<script>document.documentElement.classList.add("js");</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "مؤسسة حسن محمد الكبرى للتجارة",
+  "alternateName": ["HMK TRADING", "Hassan Mohammed Alkubra Trading Est."],
+  "url": "https://hmktrading.com/",
+  "logo": "https://hmktrading.com/assets/logo-mark.png",
+  "email": "support@hmktrading.com",
+  "address": { "@type": "PostalAddress", "addressCountry": "SA" }
+}
+</script>
 </head>
-<body>
-  <header>
-    <div class="wrap">
-      <div class="brand"><div class="mark">HMK</div><div>مؤسسة حسن محمد الكبرى للتجارة<small>HMK TRADING</small></div></div>
-      <nav>
-        <a href="#activity">النشاط</a>
-        <a href="#apps">التطبيقات</a>
-        <a href="#company">عن المؤسسة</a>
-        <a href="#contact">تواصل</a>
-        <a href="#en">English</a>
-      </nav>
-    </div>
-  </header>
+<body class="bg-surface text-on-surface text-body-md antialiased">
 
-  <div class="hero">
-    <div class="wrap">
-      <div class="eyebrow">مؤسسة سعودية لتطوير وتشغيل التطبيقات والمنصات الإلكترونية</div>
-      <h1>مؤسسة حسن محمد الكبرى للتجارة</h1>
-      <div class="en-name">HMK TRADING</div>
-      <p>نبني ونشغّل منتجات رقمية سعودية تخدم قطاعات مختلفة: من العناية الصحية والجمالية للمرأة، إلى أسواق المزادات وبيع الإبل وخدماتها.</p>
-      <a class="cta" href="#apps">تطبيقاتنا</a>
-      <a class="cta ghost" href="#contact">تواصل معنا</a>
+<!-- ============ HEADER ============ -->
+<header class="fixed top-0 inset-x-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(11,31,58,0.06)]">
+  <div class="h-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex items-center justify-between gap-4">
+    <a href="#hero" class="flex items-center gap-3 shrink-0">
+      <img src="assets/logo-mark.png" alt="HMK" width="44" height="44" class="w-11 h-11 rounded-xl shadow-[0_4px_12px_rgba(11,31,58,0.25)]" />
+      <span class="flex flex-col">
+        <span class="text-title-md text-primary-container font-bold tracking-tight leading-none" dir="ltr">HMK TRADING</span>
+        <span class="text-[11px] text-tertiary font-semibold mt-1" data-en="Website &amp; App Solutions">مؤسسة حسن محمد الكبرى للتجارة</span>
+      </span>
+    </a>
+
+    <nav class="hidden xl:flex items-center gap-7 text-label-md text-on-surface-variant" aria-label="الرئيسية" data-en-label="Main">
+      <a class="nav-link py-2 hover:text-on-surface transition-colors" href="#hero" data-en="Home">الرئيسية</a>
+      <a class="nav-link py-2 hover:text-on-surface transition-colors" href="#about" data-en="About">عن المؤسسة</a>
+      <a class="nav-link py-2 hover:text-on-surface transition-colors" href="#business" data-en="What we do">مجالات عملنا</a>
+      <a class="nav-link py-2 hover:text-on-surface transition-colors" href="#apps" data-en="Our apps">تطبيقاتنا</a>
+      <a class="nav-link py-2 hover:text-on-surface transition-colors" href="#why-us" data-en="Why HMK">لماذا HMK</a>
+      <a class="nav-link py-2 hover:text-on-surface transition-colors" href="#contact" data-en="Contact">تواصل معنا</a>
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <div class="hidden sm:flex items-center bg-surface-container-low p-1 rounded-full text-label-sm" role="group" aria-label="اللغة" data-en-label="Language">
+        <button type="button" class="px-3 py-1.5 rounded-full text-on-surface-variant transition-all" data-lang-btn="ar" aria-pressed="true">العربية</button>
+        <button type="button" class="px-3 py-1.5 rounded-full text-on-surface-variant transition-all" data-lang-btn="en" aria-pressed="false" lang="en">EN</button>
+      </div>
+      <a href="#contact" class="hidden sm:inline-flex items-center justify-center h-12 px-6 rounded-xl bg-tertiary-container hover:bg-tertiary text-on-tertiary-container hover:text-on-tertiary text-label-md transition-all shadow-[0_4px_16px_rgba(204,168,48,0.25)]" data-en="Contact us">تواصل معنا</a>
+      <button type="button" id="menuBtn" class="xl:hidden w-11 h-11 rounded-xl flex items-center justify-center text-primary-container hover:bg-surface-container-low transition-colors" aria-expanded="false" aria-controls="mobileMenu" aria-label="القائمة" data-en-label="Menu">
+        <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+      </button>
     </div>
   </div>
 
-  <section id="activity">
-    <div class="wrap">
-      <div class="title"><h2>نشاط المؤسسة</h2></div>
-      <div class="grid">
-        <div class="card"><h3>تطوير التطبيقات</h3><p>تصميم وبرمجة تطبيقات الجوال (iOS وأندرويد) والويب، من الفكرة إلى النشر في المتاجر.</p></div>
-        <div class="card"><h3>تشغيل المنصات الإلكترونية</h3><p>إدارة أسواق إلكترونية ومنصات اشتراك، مع أنظمة الدفع والإشعارات والدعم وحماية المستخدمين.</p></div>
-        <div class="card"><h3>الخدمات الرقمية بالاشتراك</h3><p>باقات اشتراك للخدمات الصحية والجمالية تُقدَّم عبر مختصات معتمدات داخل التطبيق.</p></div>
-        <div class="card"><h3>الأسواق والمزادات الإلكترونية</h3><p>منصات لبيع وشراء الإبل بالمزاد العلني أو السعر الثابت، وربط البائعين بمقدمي النقل والخدمات.</p></div>
+  <!-- Mobile menu -->
+  <div id="mobileMenu" class="xl:hidden hidden border-t border-outline-variant/30 bg-surface-container-lowest">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-col text-title-md text-primary-container" aria-label="القائمة" data-en-label="Menu">
+      <a class="nav-link py-3 border-b border-outline-variant/20" href="#hero" data-en="Home">الرئيسية</a>
+      <a class="nav-link py-3 border-b border-outline-variant/20" href="#about" data-en="About">عن المؤسسة</a>
+      <a class="nav-link py-3 border-b border-outline-variant/20" href="#business" data-en="What we do">مجالات عملنا</a>
+      <a class="nav-link py-3 border-b border-outline-variant/20" href="#apps" data-en="Our apps">تطبيقاتنا</a>
+      <a class="nav-link py-3 border-b border-outline-variant/20" href="#why-us" data-en="Why HMK">لماذا HMK</a>
+      <a class="nav-link py-3" href="#contact" data-en="Contact">تواصل معنا</a>
+      <div class="sm:hidden flex items-center justify-between pt-4">
+        <span class="text-label-md text-on-surface-variant" data-en="Language">اللغة</span>
+        <div class="flex items-center bg-surface-container-low p-1 rounded-full text-label-sm" role="group" aria-label="اللغة" data-en-label="Language">
+          <button type="button" class="px-3 py-1.5 rounded-full text-on-surface-variant transition-all" data-lang-btn="ar" aria-pressed="true">العربية</button>
+          <button type="button" class="px-3 py-1.5 rounded-full text-on-surface-variant transition-all" data-lang-btn="en" aria-pressed="false" lang="en">EN</button>
+        </div>
       </div>
-    </div>
-  </section>
+      <a href="#contact" class="mt-3 sm:hidden inline-flex items-center justify-center h-12 rounded-xl bg-tertiary-container text-on-tertiary-container text-label-md" data-en="Contact us">تواصل معنا</a>
+    </nav>
+  </div>
+</header>
 
-  <section id="apps" class="light">
-    <div class="wrap">
-      <div class="title"><h2>التطبيقات التابعة للمؤسسة</h2></div>
+<main class="pt-20">
+<div class="relative overflow-hidden">
+  <!-- Arabesque watermark -->
+  <div aria-hidden="true" class="absolute inset-x-0 top-0 h-[1100px] pointer-events-none opacity-[0.04] text-primary-container">
+    <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <pattern id="hmk-arabesque" width="96" height="96" patternUnits="userSpaceOnUse">
+          <path d="M48 0 L96 48 L48 96 L0 48 Z" fill="none" stroke="currentColor" stroke-width="1.2" />
+          <circle cx="48" cy="48" r="20" fill="none" stroke="currentColor" stroke-width="1" />
+          <path d="M48 12 L84 48 L48 84 L12 48 Z" fill="none" stroke="currentColor" stroke-width="0.8" />
+          <circle cx="48" cy="48" r="8" fill="none" stroke="currentColor" stroke-width="0.75" />
+          <line x1="0" y1="0" x2="96" y2="96" stroke="currentColor" stroke-width="0.5" />
+          <line x1="96" y1="0" x2="0" y2="96" stroke="currentColor" stroke-width="0.5" />
+        </pattern>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#hmk-arabesque)" />
+    </svg>
+  </div>
 
-      <div class="app">
-        <div>
-          <div class="head"><img src="assets/icon.png" alt="" /><div><h3>ماي كير · MY CARE</h3><p class="sub">عناية متكاملة بالجسم والبشرة</p></div></div>
-          <p>اشتراك يُسند للعضوة فريقاً خاصاً من مدربة لياقة وتغذية وأخصائية بشرة معتمدتين، مع خطة أسبوعية ومتابعة يومية وشات خاص ومحمي، ومجتمع نسائي مغلق، وسوق «ماي بيوتي» لخدمات الجمال المنزلية.</p>
-          <ul>
-            <li>مطابقة ذكية مع الفريق بحسب استبيان الاحتياجات.</li>
-            <li>سجل تطور البشرة والمقاسات محمي برمز وبصمة.</li>
-            <li>حجز مصففات شعر وفنانات مكياج بتقييمات حقيقية.</li>
-          </ul>
-          <div class="links">
-            <a class="btn" href="https://ndo-care.expo.app" target="_blank" rel="noopener">النسخة الإلكترونية</a>
-            <span class="btn disabled">App Store · قريباً</span>
-            <span class="btn disabled">Google Play · قريباً</span>
+  <!-- ============ HERO ============ -->
+  <section id="hero" class="relative z-10 pt-10 pb-20 lg:pt-16 lg:pb-28">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-14 lg:gap-8 items-center">
+      <div class="lg:col-span-7 flex flex-col items-start gap-6">
+        <div class="inline-flex flex-wrap items-center gap-x-2.5 gap-y-1 px-4 py-1.5 rounded-2xl sm:rounded-full bg-surface-container-high shadow-sm">
+          <span class="w-2 h-2 rounded-full bg-tertiary animate-pulse" aria-hidden="true"></span>
+          <span class="text-label-sm font-bold text-tertiary" data-en="SAUDI ESTABLISHMENT">مؤسسة سعودية</span>
+          <span class="hidden sm:inline text-outline-variant" aria-hidden="true">|</span>
+          <span class="text-label-sm text-secondary font-semibold" data-en="Trading · Websites · Apps">تجارة · مواقع · تطبيقات</span>
+        </div>
+        <h1 class="text-headline-xl-mobile sm:text-headline-xl lg:text-display-hero text-primary-container">
+          <span class="block" data-en="Trading with trust.">التجارة بثقة.</span>
+          <span class="block text-secondary" data-en="Building with technology.">البناء بالتقنية.</span>
+        </h1>
+        <p class="text-body-md sm:text-body-lg text-on-surface-variant max-w-xl" data-en="HMK TRADING (Hassan Mohammed Alkubra Trading Est.) is a Saudi establishment working in general trading and in designing and building websites and apps. Our own apps are used every day: MY CARE, Souq Al-Ibl and Adhan &amp; Salah.">مؤسسة حسن محمد الكبرى للتجارة (HMK TRADING) مؤسسة سعودية تعمل في التجارة العامة، وتصمم وتبرمج المواقع والتطبيقات. ومن تطويرنا تطبيقات يستخدمها الناس كل يوم: ماي كير، وسوق الإبل، والأذان والصلاة.</p>
+        <div class="flex flex-wrap items-center gap-4 pt-2 w-full sm:w-auto">
+          <a href="#apps" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 h-14 rounded-xl bg-primary-container text-on-primary text-title-md transition-all shadow-[0_4px_24px_rgba(11,31,58,0.24)] hover:shadow-[0_8px_30px_rgba(0,114,206,0.35)] hover:-translate-y-0.5">
+            <span class="material-symbols-outlined text-secondary-fixed" aria-hidden="true">phone_iphone</span>
+            <span data-en="Explore our apps">استكشف تطبيقاتنا</span>
+          </a>
+          <a href="#contact" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 h-14 rounded-xl bg-surface-container-lowest text-primary-container text-title-md shadow-sm hover:shadow-md transition-all hover:-translate-y-0.5">
+            <span class="w-2.5 h-2.5 rounded-full bg-tertiary-container" aria-hidden="true"></span>
+            <span data-en="Get in touch">تواصل معنا</span>
+            <span class="material-symbols-outlined text-tertiary text-base rtl:-scale-x-100" aria-hidden="true">arrow_forward</span>
+          </a>
+        </div>
+        <div class="pt-2 flex flex-wrap items-center gap-x-6 gap-y-2 text-label-sm text-outline">
+          <span class="flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-secondary text-base" aria-hidden="true">verified</span>
+            <span data-en="2 apps live on the App Store">تطبيقان متاحان على App Store</span>
+          </span>
+          <span class="flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-secondary text-base" aria-hidden="true">location_on</span>
+            <span data-en="Made in Saudi Arabia">من المملكة العربية السعودية</span>
+          </span>
+        </div>
+      </div>
+
+      <!-- Hero visual: our three apps -->
+      <div class="lg:col-span-5">
+        <div class="relative mx-auto w-full max-w-[460px] h-[430px] sm:h-[540px]">
+          <div class="absolute inset-x-10 top-12 bottom-16 rounded-full bg-secondary-fixed-dim/40 blur-3xl" aria-hidden="true"></div>
+          <div class="absolute -bottom-4 start-4 w-48 h-48 rounded-full bg-tertiary-fixed/40 blur-2xl" aria-hidden="true"></div>
+          <div class="phone bg-mycare absolute top-16 start-0 w-[37%] -rotate-6 rtl:rotate-6">
+            <img src="assets/apps/mycare-1.jpg" alt="تطبيق ماي كير" data-en-alt="MY CARE app" width="540" height="1170" />
+          </div>
+          <div class="phone bg-primary-container absolute top-16 end-0 w-[37%] rotate-6 rtl:-rotate-6">
+            <img src="assets/apps/souq-1.jpg" alt="تطبيق سوق الإبل" data-en-alt="Souq Al-Ibl app" width="443" height="960" />
+          </div>
+          <div class="phone bg-primary-container absolute top-0 inset-x-0 mx-auto w-[47%] z-10">
+            <img src="assets/apps/adhan-1.jpg" alt="تطبيق الأذان والصلاة" data-en-alt="Adhan &amp; Salah app" width="540" height="1170" />
+          </div>
+          <div class="absolute top-4 -end-2 sm:-end-6 z-20 bg-surface-container-lowest rounded-2xl p-3 sm:p-3.5 shadow-xl flex items-center gap-3">
+            <span class="w-10 h-10 rounded-xl bg-tertiary-container/20 text-tertiary flex items-center justify-center">
+              <span class="material-symbols-outlined text-xl" aria-hidden="true">apps</span>
+            </span>
+            <span class="flex flex-col">
+              <span class="text-sm font-bold text-primary-container" data-en="3 apps">3 تطبيقات</span>
+              <span class="text-xs text-outline" data-en="built in-house">من تطويرنا</span>
+            </span>
+          </div>
+          <div class="absolute bottom-0 -start-2 sm:-start-6 z-20 bg-surface-container-lowest rounded-2xl p-3 sm:p-3.5 shadow-xl flex items-center gap-3">
+            <span class="flex -space-x-2 rtl:space-x-reverse">
+              <img src="assets/apps/mycare-icon.jpg" alt="" width="36" height="36" class="w-9 h-9 rounded-lg ring-2 ring-white" />
+              <img src="assets/apps/souq-icon.jpg" alt="" width="36" height="36" class="w-9 h-9 rounded-lg ring-2 ring-white" />
+            </span>
+            <span class="flex flex-col">
+              <span class="text-sm font-bold text-primary-container" data-en="Live on the App Store">متاح على App Store</span>
+              <span class="text-xs text-outline" data-en="MY CARE · Souq Al-Ibl">ماي كير · سوق الإبل</span>
+            </span>
           </div>
         </div>
-        <div class="shots">
-          <img src="assets/01-home.jpg" alt="ماي كير: الرئيسية" loading="lazy" />
-          <img src="assets/02-tasks.jpg" alt="ماي كير: مهام اليوم" loading="lazy" />
-          <img src="assets/06-chat.jpg" alt="ماي كير: الشات" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATS ============ -->
+  <section class="relative z-10 py-12 bg-surface-container-lowest shadow-sm" aria-label="أرقام" data-en-label="Numbers">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
+      <div class="reveal p-5 sm:p-6 rounded-2xl bg-surface-container-low/60 hover:bg-surface-container-low transition-all group flex flex-col">
+        <div class="flex items-center justify-between mb-3">
+          <span class="text-headline-lg sm:text-headline-xl text-primary-container font-extrabold group-hover:text-secondary transition-colors" dir="ltr">3</span>
+          <span class="w-9 h-9 rounded-xl bg-tertiary-container/20 text-tertiary flex items-center justify-center"><span class="material-symbols-outlined text-lg" aria-hidden="true">apps</span></span>
+        </div>
+        <span class="text-title-md text-primary-container font-bold mb-1" data-en="Apps we built">تطبيقات من تطويرنا</span>
+        <p class="text-body-sm text-on-surface-variant" data-en="Designed, built and run in-house.">صممناها وبرمجناها ونشغّلها بأنفسنا.</p>
+      </div>
+      <div class="reveal p-5 sm:p-6 rounded-2xl bg-surface-container-low/60 hover:bg-surface-container-low transition-all group flex flex-col">
+        <div class="flex items-center justify-between mb-3">
+          <span class="text-headline-lg sm:text-headline-xl text-primary-container font-extrabold group-hover:text-secondary transition-colors" dir="ltr">2</span>
+          <span class="w-9 h-9 rounded-xl bg-secondary/15 text-secondary flex items-center justify-center"><span class="material-symbols-outlined text-lg" aria-hidden="true">verified</span></span>
+        </div>
+        <span class="text-title-md text-primary-container font-bold mb-1" data-en="Live on the App Store">على App Store الآن</span>
+        <p class="text-body-sm text-on-surface-variant" data-en="MY CARE and Souq Al-Ibl are ready to download.">ماي كير وسوق الإبل متاحان للتحميل.</p>
+      </div>
+      <div class="reveal p-5 sm:p-6 rounded-2xl bg-surface-container-low/60 hover:bg-surface-container-low transition-all group flex flex-col">
+        <div class="flex items-center justify-between mb-3">
+          <span class="text-headline-lg sm:text-headline-xl text-primary-container font-extrabold group-hover:text-secondary transition-colors" dir="ltr">3</span>
+          <span class="w-9 h-9 rounded-xl bg-tertiary-container/20 text-tertiary flex items-center justify-center"><span class="material-symbols-outlined text-lg" aria-hidden="true">devices</span></span>
+        </div>
+        <span class="text-title-md text-primary-container font-bold mb-1" data-en="Platforms we build for">منصات نطوّر لها</span>
+        <p class="text-body-sm text-on-surface-variant" data-en="iPhone, Android and the web.">الآيفون والأندرويد والويب.</p>
+      </div>
+      <div class="reveal p-5 sm:p-6 rounded-2xl bg-surface-container-low/60 hover:bg-surface-container-low transition-all group flex flex-col">
+        <div class="flex items-center justify-between mb-3">
+          <span class="text-headline-lg sm:text-headline-xl text-primary-container font-extrabold group-hover:text-secondary transition-colors" dir="ltr">100%</span>
+          <span class="w-9 h-9 rounded-xl bg-secondary/15 text-secondary flex items-center justify-center"><span class="material-symbols-outlined text-lg" aria-hidden="true">workspace_premium</span></span>
+        </div>
+        <span class="text-title-md text-primary-container font-bold mb-1" data-en="Saudi-owned">مؤسسة سعودية</span>
+        <p class="text-body-sm text-on-surface-variant" data-en="Arabic-first experiences built for local users.">تجربة عربية أصيلة تفهم المستخدم المحلي.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="relative z-10 py-20 lg:py-28">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <div class="reveal lg:col-span-5 relative pb-12">
+        <div class="rounded-3xl overflow-hidden shadow-xl bg-primary-container">
+          <img src="assets/logo-full.jpg" alt="شعار HMK TRADING" data-en-alt="HMK TRADING logo" width="1408" height="768" class="w-full aspect-[4/3] object-cover" loading="lazy" />
+        </div>
+        <div class="absolute bottom-0 start-4 sm:-start-4 bg-surface-container-lowest p-4 sm:p-5 rounded-2xl shadow-xl max-w-xs border-s-4 border-tertiary flex items-center gap-3">
+          <span class="material-symbols-outlined text-tertiary text-3xl" aria-hidden="true">verified</span>
+          <span class="flex flex-col">
+            <span class="text-title-md font-bold text-primary-container" data-en="Registered Saudi establishment">مؤسسة سعودية مسجّلة</span>
+            <span class="text-label-sm text-outline" data-en="Commercial registration in Saudi Arabia">سجل تجاري في المملكة العربية السعودية</span>
+          </span>
         </div>
       </div>
-
-      <div class="app">
-        <div>
-          <div class="head"><img src="assets/souq-icon.jpg" alt="" /><div><h3>سوق الإبل · Souq Al-Ibl</h3><p class="sub">مزادات وبيع الإبل ونقلها وخدماتها</p></div></div>
-          <p>سوق إلكتروني تُباع فيه الإبل من مرابعها: عروض من كل مناطق المملكة، مزادات علنية شفافة أو بيع فوري بسعر ثابت، وحجز نقل بالشيول من ناقلين موثّقين، كل ذلك من الجوال.</p>
-          <ul>
-            <li>مزادات علنية: اسم كل مزايد ومبلغه ظاهران، بلا مساومة خفية.</li>
-            <li>تصفية حسب السلالة والمنطقة والأقرب إليك، وبحث صوتي.</li>
-            <li>طلبات نقل الإبل، بلاغات الضوال، ومستلزمات بيطرية وأعلاف من مزودين موثّقين.</li>
-          </ul>
-          <div class="links">
-            <a class="btn" href="https://apps.apple.com/sa/app/souq-al-ibl-camel-auctions/id6810638020" target="_blank" rel="noopener">App Store</a>
-            <a class="btn soft" href="https://souq-al-ibl.expo.app" target="_blank" rel="noopener">النسخة الإلكترونية</a>
-            <span class="btn disabled">Google Play · قريباً</span>
+      <div class="lg:col-span-7 flex flex-col gap-6">
+        <div class="self-start inline-flex items-center gap-2 px-3 py-1 rounded-md bg-secondary/10 text-secondary text-label-sm font-bold">
+          <span class="material-symbols-outlined text-sm" aria-hidden="true">domain</span>
+          <span data-en="ABOUT US">عن المؤسسة</span>
+        </div>
+        <h2 class="text-headline-lg-mobile sm:text-headline-lg text-primary-container">
+          <span class="block" data-en="Where trading experience">نجمع بين خبرة التجارة</span>
+          <span class="block text-secondary" data-en="meets digital product building">وصناعة المنتجات الرقمية</span>
+        </h2>
+        <p class="text-body-md text-on-surface-variant" data-en="Hassan Mohammed Alkubra Trading Est. is a Saudi establishment working in two fields: general trading, and website and app development. We build our own digital products from idea to store release, run them and keep improving them, and we bring the same experience to businesses and individuals who want a website or an app of their own.">مؤسسة حسن محمد الكبرى للتجارة مؤسسة سعودية تعمل في مجالين: التجارة العامة، وتصميم وبرمجة المواقع والتطبيقات. نبني منتجاتنا الرقمية بأنفسنا من الفكرة إلى النشر في المتاجر، ونشغّلها ونطوّرها باستمرار، ونقدّم الخبرة نفسها للشركات والأفراد الذين يريدون موقعاً أو تطبيقاً باسمهم.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
+          <div class="reveal p-6 rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all">
+            <span class="w-10 h-10 rounded-xl bg-tertiary-container/20 text-tertiary flex items-center justify-center mb-3"><span class="material-symbols-outlined" aria-hidden="true">visibility</span></span>
+            <h3 class="text-title-md text-primary-container font-bold mb-2" data-en="Our vision">رؤيتنا</h3>
+            <p class="text-body-sm text-on-surface-variant" data-en="To be one of the leading Saudi builders of Arabic apps and websites that people rely on every day.">أن نكون من أبرز المؤسسات السعودية في بناء تطبيقات ومواقع عربية يعتمد عليها الناس في يومهم.</p>
+          </div>
+          <div class="reveal p-6 rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all">
+            <span class="w-10 h-10 rounded-xl bg-secondary/15 text-secondary flex items-center justify-center mb-3"><span class="material-symbols-outlined" aria-hidden="true">rocket_launch</span></span>
+            <h3 class="text-title-md text-primary-container font-bold mb-2" data-en="Our mission">رسالتنا</h3>
+            <p class="text-body-sm text-on-surface-variant" data-en="We design and build clear, easy and secure digital products, and serve our clients in trading and technology with honesty, speed and commitment.">نصمم ونبرمج حلولاً رقمية واضحة وسهلة وآمنة، ونخدم عملاءنا في التجارة والتقنية بأمانة وسرعة والتزام.</p>
           </div>
         </div>
-        <div class="shots">
-          <img src="assets/souq-01.jpg" alt="سوق الإبل: الرئيسية" loading="lazy" />
-          <img src="assets/souq-02.jpg" alt="سوق الإبل: المزادات" loading="lazy" />
-          <img src="assets/souq-03.jpg" alt="سوق الإبل: إضافة عرض" loading="lazy" />
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ WHAT WE DO ============ -->
+<section id="business" class="relative z-10 py-20 bg-surface-container-low/40">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+    <div class="text-center max-w-3xl mx-auto mb-14 flex flex-col gap-3">
+      <span class="text-label-md text-secondary font-bold" data-en="WHAT WE DO">مجالات عملنا</span>
+      <h2 class="text-headline-lg-mobile sm:text-headline-lg text-primary-container" data-en="Trading and technology under one roof">تجارة وتقنية تحت سقف واحد</h2>
+      <p class="text-body-md text-on-surface-variant" data-en="We serve our clients in general trading, and we build digital products, for them and for ourselves, that work reliably every day.">نخدم عملاءنا في التجارة العامة، ونبني لهم ولأنفسنا منتجات رقمية تعمل بكفاءة كل يوم.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <a href="#apps" class="reveal group bg-surface-container-lowest p-8 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+        <span>
+          <span class="w-14 h-14 rounded-2xl bg-secondary/10 text-secondary flex items-center justify-center mb-6 group-hover:bg-primary-container group-hover:text-on-primary transition-all"><span class="material-symbols-outlined text-2xl" aria-hidden="true">phone_iphone</span></span>
+          <h3 class="text-title-md text-primary-container font-bold mb-3" data-en="Mobile app development">تطوير تطبيقات الجوال</h3>
+          <p class="text-body-sm text-on-surface-variant" data-en="We design and build iPhone and Android apps from idea to release on the App Store and Google Play, with updates and support after launch.">نصمم ونبرمج تطبيقات الآيفون والأندرويد من الفكرة حتى النشر في App Store وGoogle Play، مع المتابعة والتحديث بعد الإطلاق.</p>
+        </span>
+        <span class="pt-6 flex items-center gap-1 text-label-sm font-bold text-secondary group-hover:text-primary-container">
+          <span data-en="See our apps">شاهد تطبيقاتنا</span>
+          <span class="material-symbols-outlined text-sm rtl:-scale-x-100" aria-hidden="true">arrow_forward</span>
+        </span>
+      </a>
+      <a href="#contact" class="reveal group bg-surface-container-lowest p-8 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+        <span>
+          <span class="w-14 h-14 rounded-2xl bg-tertiary-container/20 text-tertiary flex items-center justify-center mb-6 group-hover:bg-tertiary-container group-hover:text-on-tertiary-container transition-all"><span class="material-symbols-outlined text-2xl" aria-hidden="true">language</span></span>
+          <h3 class="text-title-md text-primary-container font-bold mb-3" data-en="Website design &amp; development">تصميم وبرمجة المواقع</h3>
+          <p class="text-body-sm text-on-surface-variant" data-en="Company websites, landing pages and online stores: fast, mobile-friendly, in Arabic and English.">مواقع للشركات وصفحات تعريفية ومتاجر إلكترونية، سريعة ومتجاوبة مع الجوال، بالعربية والإنجليزية.</p>
+        </span>
+        <span class="pt-6 flex items-center gap-1 text-label-sm font-bold text-tertiary group-hover:text-primary-container">
+          <span data-en="Request a website">اطلب موقعك</span>
+          <span class="material-symbols-outlined text-sm rtl:-scale-x-100" aria-hidden="true">arrow_forward</span>
+        </span>
+      </a>
+      <a href="#app-souq" class="reveal group bg-surface-container-lowest p-8 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+        <span>
+          <span class="w-14 h-14 rounded-2xl bg-secondary/10 text-secondary flex items-center justify-center mb-6 group-hover:bg-primary-container group-hover:text-on-primary transition-all"><span class="material-symbols-outlined text-2xl" aria-hidden="true">storefront</span></span>
+          <h3 class="text-title-md text-primary-container font-bold mb-3" data-en="Running online platforms">تشغيل المنصات الإلكترونية</h3>
+          <p class="text-body-sm text-on-surface-variant" data-en="We run online marketplaces, auctions and subscription platforms, with payments, notifications, support and user protection.">نشغّل أسواقاً إلكترونية ومزادات ومنصات اشتراك، مع أنظمة الدفع والإشعارات والدعم وحماية المستخدمين.</p>
+        </span>
+        <span class="pt-6 flex items-center gap-1 text-label-sm font-bold text-secondary group-hover:text-primary-container">
+          <span data-en="Example: Souq Al-Ibl">مثال: سوق الإبل</span>
+          <span class="material-symbols-outlined text-sm rtl:-scale-x-100" aria-hidden="true">arrow_forward</span>
+        </span>
+      </a>
+      <a href="#contact" class="reveal group bg-surface-container-lowest p-8 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+        <span>
+          <span class="w-14 h-14 rounded-2xl bg-tertiary-container/20 text-tertiary flex items-center justify-center mb-6 group-hover:bg-tertiary-container group-hover:text-on-tertiary-container transition-all"><span class="material-symbols-outlined text-2xl" aria-hidden="true">inventory_2</span></span>
+          <h3 class="text-title-md text-primary-container font-bold mb-3" data-en="General trading">التجارة العامة</h3>
+          <p class="text-body-sm text-on-surface-variant" data-en="Supplying goods and products to individuals and businesses, with honest dealing and on-time delivery.">توريد السلع والمنتجات للأفراد والشركات، بأمانة في التعامل والتزام بالمواعيد.</p>
+        </span>
+        <span class="pt-6 flex items-center gap-1 text-label-sm font-bold text-tertiary group-hover:text-primary-container">
+          <span data-en="Ask about supply">تواصل للتوريد</span>
+          <span class="material-symbols-outlined text-sm rtl:-scale-x-100" aria-hidden="true">arrow_forward</span>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OUR APPS ============ -->
+<section id="apps" class="relative z-10 py-20 lg:py-28">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
+      <div>
+        <span class="text-label-md text-secondary font-bold" data-en="OUR APPS">تطبيقاتنا</span>
+        <h2 class="text-headline-lg-mobile sm:text-headline-lg text-primary-container mt-2" data-en="Saudi apps built by HMK">تطبيقات سعودية من تطوير HMK</h2>
+      </div>
+      <p class="text-body-md text-on-surface-variant max-w-md" data-en="Every app here was designed and built by us, and we keep shipping updates.">كل تطبيق هنا صممناه وبرمجناه بأنفسنا، وننشره ونطوّره باستمرار.</p>
+    </div>
+
+    <!-- Souq Al-Ibl (featured) -->
+    <article id="app-souq" class="reveal bg-surface-container-lowest rounded-3xl p-6 sm:p-8 lg:p-12 shadow-md hover:shadow-xl transition-all mb-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-6 flex flex-col gap-6">
+          <div class="flex items-center gap-4">
+            <img src="assets/apps/souq-icon.jpg" alt="" width="64" height="64" class="w-16 h-16 rounded-2xl shadow-md" loading="lazy" />
+            <div class="flex flex-col">
+              <div class="flex flex-wrap items-center gap-2">
+                <h3 class="text-headline-md text-primary-container font-bold" data-en="Souq Al-Ibl">سوق الإبل</h3>
+                <span class="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-secondary/10 text-secondary" data-en="Available now">متاح الآن</span>
+              </div>
+              <span class="text-label-sm text-secondary font-semibold" data-en="Camel auctions, sales and transport">مزادات وبيع الإبل ونقلها</span>
+            </div>
+          </div>
+          <p class="text-body-md text-on-surface-variant" data-en="A marketplace to buy and sell camels from every region of Saudi Arabia: transparent public auctions or instant fixed-price sales, then crane-truck transport from verified carriers. All from your phone.">سوق إلكتروني لبيع وشراء الإبل من كل مناطق المملكة: مزادات علنية شفافة أو بيع فوري بسعر ثابت، ثم طلب نقلها بالونش من ناقلين معتمدين. كل ذلك من الجوال.</p>
+          <ul class="flex flex-col gap-3">
+            <li class="flex items-start gap-3 text-body-sm text-on-surface font-medium"><span class="material-symbols-outlined text-secondary text-lg" aria-hidden="true">check_circle</span><span data-en="Public auctions: every bidder's name and amount are visible, with no hidden haggling.">مزادات علنية: اسم كل مزايد ومبلغه ظاهران، بلا مساومات خفية.</span></li>
+            <li class="flex items-start gap-3 text-body-sm text-on-surface font-medium"><span class="material-symbols-outlined text-secondary text-lg" aria-hidden="true">check_circle</span><span data-en="Show-camel, wholesale and meat markets.">سوق الفردي للمزاين، وسوق الجملة للأذواد، وسوق القصب.</span></li>
+            <li class="flex items-start gap-3 text-body-sm text-on-surface font-medium"><span class="material-symbols-outlined text-secondary text-lg" aria-hidden="true">check_circle</span><span data-en="Camel transport, lost &amp; found reports and a vet clinic forum in one place.">نقل الإبل، وبلاغات المفقودات، والعيادة البيطرية في مكان واحد.</span></li>
+          </ul>
+          <div class="flex flex-wrap items-center gap-3 pt-2">
+            <a class="store-btn" href="https://apps.apple.com/sa/app/souq-al-ibl-camel-auctions/id6810638020" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M16.37 12.6c0-2.4 2-3.56 2.08-3.62-1.13-1.66-2.9-1.88-3.52-1.9-1.5-.16-2.93.88-3.69.88-.77 0-1.94-.86-3.19-.84-1.64.03-3.15.95-4 2.42-1.7 2.95-.43 7.32 1.23 9.72.81 1.17 1.77 2.49 3.04 2.44 1.22-.05 1.68-.79 3.16-.79 1.47 0 1.89.79 3.18.77 1.31-.02 2.14-1.19 2.94-2.37.93-1.36 1.31-2.68 1.33-2.75-.03-.01-2.55-.98-2.56-3.96zM13.95 5.5c.67-.81 1.12-1.94 1-3.07-.97.04-2.14.65-2.83 1.46-.62.72-1.17 1.87-1.02 2.97 1.08.08 2.18-.55 2.85-1.36z"/></svg>
+              <span class="flex flex-col leading-tight text-start"><span class="text-[10px] opacity-80" data-en="Available on the">متاح على</span><span class="text-sm font-semibold" dir="ltr">App Store</span></span>
+            </a>
+            <span class="store-btn is-soon" aria-disabled="true">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#34A853" d="M3.6 2.3 13 11.7l3.2-3.2L5 1.6c-.5-.3-1-.3-1.4-.1z"/><path fill="#FBBC04" d="m16.2 8.5-3.2 3.2 3.2 3.2 3.6-2.1c1-.6 1-1.6 0-2.2z"/><path fill="#EA4335" d="M3.6 21.1c.4.2.9.2 1.4-.1l11.2-6.9-3.2-3.2z"/><path fill="#4285F4" d="M3.6 2.3c-.4.3-.6.7-.6 1.3v16.2c0 .6.2 1 .6 1.3L13 11.7z"/></svg>
+              <span class="flex flex-col leading-tight text-start"><span class="text-[10px]" data-en="Coming soon to">قريباً على</span><span class="text-sm font-semibold" dir="ltr">Google Play</span></span>
+            </span>
+            <a class="inline-flex items-center gap-2 h-12 px-4 rounded-xl text-label-md text-secondary hover:bg-secondary/10 transition-colors" href="https://souq-al-ibl.expo.app" target="_blank" rel="noopener">
+              <span class="material-symbols-outlined text-lg" aria-hidden="true">language</span>
+              <span data-en="Web version">النسخة الإلكترونية</span>
+            </a>
+          </div>
+        </div>
+        <div class="lg:col-span-6">
+          <div class="rounded-3xl bg-souq px-4 sm:px-8 pt-10 pb-8 flex justify-center items-end gap-3 sm:gap-5">
+            <div class="phone phone-sm bg-primary-container w-[30%] max-w-[180px]"><img src="assets/apps/souq-2.jpg" alt="سوق الإبل: المزادات والعروض" data-en-alt="Souq Al-Ibl: auctions and listings" width="443" height="960" loading="lazy" /></div>
+            <div class="phone phone-sm bg-primary-container w-[34%] max-w-[205px] -translate-y-5"><img src="assets/apps/souq-1.jpg" alt="سوق الإبل: الرئيسية" data-en-alt="Souq Al-Ibl: home" width="443" height="960" loading="lazy" /></div>
+            <div class="phone phone-sm bg-primary-container w-[30%] max-w-[180px]"><img src="assets/apps/souq-3.jpg" alt="سوق الإبل: صفحة الإعلان" data-en-alt="Souq Al-Ibl: listing page" width="443" height="960" loading="lazy" /></div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </article>
 
-  <section id="company">
-    <div class="wrap">
-      <div class="title"><h2>عن المؤسسة</h2></div>
-      <div class="card" style="max-width:760px;">
-        <dl>
-          <dt>الاسم</dt><dd>مؤسسة حسن محمد الكبرى للتجارة</dd>
-          <dt>الاسم التجاري</dt><dd>HMK TRADING</dd>
-          <dt>النشاط</dt><dd>تطوير وتشغيل التطبيقات والمنصات الإلكترونية والأسواق والمزادات الإلكترونية</dd>
-          <dt>المقر</dt><dd>المملكة العربية السعودية</dd>
-          <dt>المنتجات</dt><dd>ماي كير (MY CARE) · سوق الإبل (Souq Al-Ibl)</dd>
-        </dl>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <!-- MY CARE -->
+      <article id="app-mycare" class="reveal bg-surface-container-lowest rounded-3xl p-6 sm:p-8 shadow-sm hover:shadow-xl transition-all flex flex-col gap-6">
+        <div class="rounded-2xl bg-mycare px-4 pt-8 pb-6 flex justify-center items-end gap-3">
+          <div class="phone phone-sm bg-white/15 w-[30%] max-w-[150px]"><img src="assets/apps/mycare-2.jpg" alt="ماي كير: مهام اليوم" data-en-alt="MY CARE: today's tasks" width="540" height="1170" loading="lazy" /></div>
+          <div class="phone phone-sm bg-white/15 w-[33%] max-w-[165px] -translate-y-4"><img src="assets/apps/mycare-1.jpg" alt="ماي كير: الرئيسية" data-en-alt="MY CARE: home" width="540" height="1170" loading="lazy" /></div>
+          <div class="phone phone-sm bg-white/15 w-[30%] max-w-[150px]"><img src="assets/apps/mycare-3.jpg" alt="ماي كير: المحادثات" data-en-alt="MY CARE: chats" width="540" height="1170" loading="lazy" /></div>
+        </div>
+        <div class="flex items-center gap-4">
+          <img src="assets/apps/mycare-icon.jpg" alt="" width="56" height="56" class="w-14 h-14 rounded-2xl shadow-md" loading="lazy" />
+          <div class="flex flex-col">
+            <div class="flex flex-wrap items-center gap-2">
+              <h3 class="text-headline-sm text-primary-container font-bold" data-en="MY CARE">ماي كير</h3>
+              <span class="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-secondary/10 text-secondary" data-en="Available now">متاح الآن</span>
+            </div>
+            <span class="text-label-sm text-secondary font-semibold" data-en="Complete care for your body and skin">عناية متكاملة بجسمك وبشرتك</span>
+          </div>
+        </div>
+        <p class="text-body-sm text-on-surface-variant" data-en="A subscription that gives every member her own team, a certified fitness and nutrition coach and a skincare specialist, with a weekly plan, daily follow-up and a safe women-only community.">اشتراك يخصص لكل عضوة فريقاً خاصاً من مدربة لياقة وتغذية وأخصائية بشرة معتمدتين، مع خطة أسبوعية ومتابعة يومية ومجتمع نسائي آمن.</p>
+        <ul class="flex flex-col gap-2.5">
+          <li class="flex items-start gap-2.5 text-body-sm text-on-surface"><span class="material-symbols-outlined text-secondary text-base mt-0.5" aria-hidden="true">check_circle</span><span data-en="A fitness coach and a skin specialist follow up with you daily.">مدربة لياقة وأخصائية بشرة تتابعانك يومياً.</span></li>
+          <li class="flex items-start gap-2.5 text-body-sm text-on-surface"><span class="material-symbols-outlined text-secondary text-base mt-0.5" aria-hidden="true">check_circle</span><span data-en="Protected measurements and progress photos, with daily reminders.">قياسات وصور تطوّر محمية، مع تذكيرات يومية.</span></li>
+          <li class="flex items-start gap-2.5 text-body-sm text-on-surface"><span class="material-symbols-outlined text-secondary text-base mt-0.5" aria-hidden="true">check_circle</span><span data-en="Book at-home beauty services with real reviews.">حجز خدمات الجمال المنزلية بتقييمات حقيقية.</span></li>
+        </ul>
+        <div class="mt-auto pt-2 flex flex-wrap items-center gap-3">
+          <a class="store-btn" href="https://apps.apple.com/sa/app/my-care-body-skin/id6812802384" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M16.37 12.6c0-2.4 2-3.56 2.08-3.62-1.13-1.66-2.9-1.88-3.52-1.9-1.5-.16-2.93.88-3.69.88-.77 0-1.94-.86-3.19-.84-1.64.03-3.15.95-4 2.42-1.7 2.95-.43 7.32 1.23 9.72.81 1.17 1.77 2.49 3.04 2.44 1.22-.05 1.68-.79 3.16-.79 1.47 0 1.89.79 3.18.77 1.31-.02 2.14-1.19 2.94-2.37.93-1.36 1.31-2.68 1.33-2.75-.03-.01-2.55-.98-2.56-3.96zM13.95 5.5c.67-.81 1.12-1.94 1-3.07-.97.04-2.14.65-2.83 1.46-.62.72-1.17 1.87-1.02 2.97 1.08.08 2.18-.55 2.85-1.36z"/></svg>
+            <span class="flex flex-col leading-tight text-start"><span class="text-[10px] opacity-80" data-en="Available on the">متاح على</span><span class="text-sm font-semibold" dir="ltr">App Store</span></span>
+          </a>
+          <span class="store-btn is-soon" aria-disabled="true">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#34A853" d="M3.6 2.3 13 11.7l3.2-3.2L5 1.6c-.5-.3-1-.3-1.4-.1z"/><path fill="#FBBC04" d="m16.2 8.5-3.2 3.2 3.2 3.2 3.6-2.1c1-.6 1-1.6 0-2.2z"/><path fill="#EA4335" d="M3.6 21.1c.4.2.9.2 1.4-.1l11.2-6.9-3.2-3.2z"/><path fill="#4285F4" d="M3.6 2.3c-.4.3-.6.7-.6 1.3v16.2c0 .6.2 1 .6 1.3L13 11.7z"/></svg>
+            <span class="flex flex-col leading-tight text-start"><span class="text-[10px]" data-en="Coming soon to">قريباً على</span><span class="text-sm font-semibold" dir="ltr">Google Play</span></span>
+          </span>
+          <a class="inline-flex items-center gap-2 h-12 px-4 rounded-xl text-label-md text-secondary hover:bg-secondary/10 transition-colors" href="https://mycaresa.app" target="_blank" rel="noopener">
+            <span class="material-symbols-outlined text-lg" aria-hidden="true">language</span>
+            <span dir="ltr">mycaresa.app</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Adhan & Salah -->
+      <article id="app-adhan" class="reveal bg-surface-container-lowest rounded-3xl p-6 sm:p-8 shadow-sm hover:shadow-xl transition-all flex flex-col gap-6">
+        <div class="rounded-2xl bg-adhan px-4 pt-8 pb-6 flex justify-center items-end gap-3">
+          <div class="phone phone-sm bg-white/15 w-[30%] max-w-[150px]"><img src="assets/apps/adhan-2.jpg" alt="الأذان والصلاة: تفاصيل الصلاة" data-en-alt="Adhan &amp; Salah: prayer details" width="540" height="1170" loading="lazy" /></div>
+          <div class="phone phone-sm bg-white/15 w-[33%] max-w-[165px] -translate-y-4"><img src="assets/apps/adhan-1.jpg" alt="الأذان والصلاة: الرئيسية" data-en-alt="Adhan &amp; Salah: home" width="540" height="1170" loading="lazy" /></div>
+          <div class="phone phone-sm bg-white/15 w-[30%] max-w-[150px]"><img src="assets/apps/adhan-3.jpg" alt="الأذان والصلاة: اتجاه القبلة" data-en-alt="Adhan &amp; Salah: Qibla direction" width="540" height="1170" loading="lazy" /></div>
+        </div>
+        <div class="flex items-center gap-4">
+          <img src="assets/apps/adhan-icon.jpg" alt="" width="56" height="56" class="w-14 h-14 rounded-2xl shadow-md" loading="lazy" />
+          <div class="flex flex-col">
+            <div class="flex flex-wrap items-center gap-2">
+              <h3 class="text-headline-sm text-primary-container font-bold" data-en="Adhan &amp; Salah">الأذان والصلاة</h3>
+              <span class="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-tertiary-fixed/50 text-tertiary" data-en="Coming soon">قريباً</span>
+            </div>
+            <span class="text-label-sm text-secondary font-semibold" data-en="Prayer times, Qibla &amp; Adhkar">مواقيت الصلاة والقبلة والأذكار</span>
+          </div>
+        </div>
+        <p class="text-body-sm text-on-surface-variant" data-en="Accurate Umm Al-Qura prayer times that work offline, plus something most apps miss: when each prayer's time ends. No ads, no sign-in.">مواقيت دقيقة بتقويم أم القرى تعمل بدون إنترنت، مع ما لا تجده في أغلب التطبيقات: موعد خروج وقت كل صلاة. بلا إعلانات ولا تسجيل دخول.</p>
+        <ul class="flex flex-col gap-2.5">
+          <li class="flex items-start gap-2.5 text-body-sm text-on-surface"><span class="material-symbols-outlined text-secondary text-base mt-0.5" aria-hidden="true">check_circle</span><span data-en="Countdown to the next prayer, and when each prayer time ends.">عدّ تنازلي للصلاة القادمة، وموعد خروج كل وقت.</span></li>
+          <li class="flex items-start gap-2.5 text-body-sm text-on-surface"><span class="material-symbols-outlined text-secondary text-base mt-0.5" aria-hidden="true">check_circle</span><span data-en="Adhan alerts and a reminder before the time runs out.">تنبيه الأذان، وتذكير قبل خروج الوقت.</span></li>
+          <li class="flex items-start gap-2.5 text-body-sm text-on-surface"><span class="material-symbols-outlined text-secondary text-base mt-0.5" aria-hidden="true">check_circle</span><span data-en="Qibla compass, and adhkar with a counter and tasbih.">بوصلة القبلة، والأذكار مع عدّاد وسبحة.</span></li>
+        </ul>
+        <div class="mt-auto pt-2 flex flex-wrap items-center gap-3">
+          <span class="store-btn is-soon" aria-disabled="true">
+            <svg viewBox="0 0 24 24" fill="#000" aria-hidden="true"><path d="M16.37 12.6c0-2.4 2-3.56 2.08-3.62-1.13-1.66-2.9-1.88-3.52-1.9-1.5-.16-2.93.88-3.69.88-.77 0-1.94-.86-3.19-.84-1.64.03-3.15.95-4 2.42-1.7 2.95-.43 7.32 1.23 9.72.81 1.17 1.77 2.49 3.04 2.44 1.22-.05 1.68-.79 3.16-.79 1.47 0 1.89.79 3.18.77 1.31-.02 2.14-1.19 2.94-2.37.93-1.36 1.31-2.68 1.33-2.75-.03-.01-2.55-.98-2.56-3.96zM13.95 5.5c.67-.81 1.12-1.94 1-3.07-.97.04-2.14.65-2.83 1.46-.62.72-1.17 1.87-1.02 2.97 1.08.08 2.18-.55 2.85-1.36z"/></svg>
+            <span class="flex flex-col leading-tight text-start"><span class="text-[10px]" data-en="Coming soon to the">قريباً على</span><span class="text-sm font-semibold" dir="ltr">App Store</span></span>
+          </span>
+          <span class="store-btn is-soon" aria-disabled="true">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#34A853" d="M3.6 2.3 13 11.7l3.2-3.2L5 1.6c-.5-.3-1-.3-1.4-.1z"/><path fill="#FBBC04" d="m16.2 8.5-3.2 3.2 3.2 3.2 3.6-2.1c1-.6 1-1.6 0-2.2z"/><path fill="#EA4335" d="M3.6 21.1c.4.2.9.2 1.4-.1l11.2-6.9-3.2-3.2z"/><path fill="#4285F4" d="M3.6 2.3c-.4.3-.6.7-.6 1.3v16.2c0 .6.2 1 .6 1.3L13 11.7z"/></svg>
+            <span class="flex flex-col leading-tight text-start"><span class="text-[10px]" data-en="Coming soon to">قريباً على</span><span class="text-sm font-semibold" dir="ltr">Google Play</span></span>
+          </span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY HMK ============ -->
+<section id="why-us" class="relative z-10 py-20 bg-primary-container text-on-primary">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+    <div class="text-center max-w-3xl mx-auto mb-14 flex flex-col gap-3">
+      <span class="text-label-md text-tertiary-fixed font-bold" data-en="WHY HMK">لماذا HMK</span>
+      <h2 class="text-headline-lg-mobile sm:text-headline-lg" data-en="Why choose HMK TRADING?">لماذا تختار HMK TRADING؟</h2>
+      <p class="text-body-md text-inverse-primary max-w-xl mx-auto" data-en="We combine a trader's integrity with a developer's craft, and deliver work you can rely on.">نجمع بين أمانة التاجر وإتقان المطوّر، ونسلّمك عملاً تقدر تعتمد عليه.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="reveal bg-white/5 p-8 rounded-2xl border-t-2 border-secondary-container hover:bg-white/10 transition-all">
+        <span class="w-12 h-12 rounded-xl bg-secondary/30 text-secondary-fixed flex items-center justify-center mb-6"><span class="material-symbols-outlined text-2xl" aria-hidden="true">rocket_launch</span></span>
+        <h3 class="text-title-md font-bold mb-3" data-en="Apps that actually ship">تطبيقات منشورة فعلاً</h3>
+        <p class="text-body-sm text-inverse-primary" data-en="Our work isn't mockups: our apps are on the App Store and in people's hands.">أعمالنا ليست نماذج على الورق: تطبيقاتنا منشورة على App Store ويستخدمها الناس.</p>
+      </div>
+      <div class="reveal bg-white/5 p-8 rounded-2xl border-t-2 border-tertiary-container hover:bg-white/10 transition-all">
+        <span class="w-12 h-12 rounded-xl bg-tertiary-container/20 text-tertiary-fixed flex items-center justify-center mb-6"><span class="material-symbols-outlined text-2xl" aria-hidden="true">translate</span></span>
+        <h3 class="text-title-md font-bold mb-3" data-en="Truly Arabic experience">تجربة عربية أصيلة</h3>
+        <p class="text-body-sm text-inverse-primary" data-en="We design in Arabic from day one: correct right-to-left layout, clear type and language that feels natural.">نصمم بالعربية من البداية: اتجاه صحيح، وخطوط واضحة، ولغة قريبة من المستخدم.</p>
+      </div>
+      <div class="reveal bg-white/5 p-8 rounded-2xl border-t-2 border-secondary-container hover:bg-white/10 transition-all">
+        <span class="w-12 h-12 rounded-xl bg-secondary/30 text-secondary-fixed flex items-center justify-center mb-6"><span class="material-symbols-outlined text-2xl" aria-hidden="true">shield</span></span>
+        <h3 class="text-title-md font-bold mb-3" data-en="Privacy &amp; security">الخصوصية والأمان</h3>
+        <p class="text-body-sm text-inverse-primary" data-en="We collect only the data we need and protect it with secure sign-in and clear privacy policies.">نجمع من البيانات قدر الحاجة فقط، ونحميها بتسجيل دخول آمن وسياسات خصوصية واضحة.</p>
+      </div>
+      <div class="reveal bg-white/5 p-8 rounded-2xl border-t-2 border-tertiary-container hover:bg-white/10 transition-all">
+        <span class="w-12 h-12 rounded-xl bg-tertiary-container/20 text-tertiary-fixed flex items-center justify-center mb-6"><span class="material-symbols-outlined text-2xl" aria-hidden="true">support_agent</span></span>
+        <h3 class="text-title-md font-bold mb-3" data-en="Support after launch">متابعة بعد الإطلاق</h3>
+        <p class="text-body-sm text-inverse-primary" data-en="We keep improving what we build, with regular updates and fast Arabic support.">نتابع ما نبنيه بتحديثات مستمرة ودعم عربي سريع.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="contact" class="light">
-    <div class="wrap">
-      <div class="title"><h2>تواصل معنا</h2></div>
-      <div class="grid">
-        <div class="card"><h3>البريد الإلكتروني</h3><p><a href="mailto:support@hmktrading.com">support@hmktrading.com</a></p></div>
-        <div class="card"><h3>دعم ماي كير</h3><p><a href="https://ndo-care.expo.app/support" target="_blank" rel="noopener">صفحة الدعم والمساعدة</a> · <a href="https://ndo-care.expo.app/privacy" target="_blank" rel="noopener">الخصوصية</a> · <a href="https://ndo-care.expo.app/terms" target="_blank" rel="noopener">الشروط</a></p></div>
-        <div class="card"><h3>سوق الإبل</h3><p><a href="https://souq-al-ibl.expo.app" target="_blank" rel="noopener">souq-al-ibl.expo.app</a></p></div>
+<!-- ============ HOW WE WORK ============ -->
+<section class="relative z-10 py-16 bg-surface-container-lowest border-b border-outline-variant/20" aria-labelledby="process-title">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+    <div class="text-center mb-12 flex flex-col gap-2">
+      <span class="text-label-md text-secondary font-bold" data-en="HOW WE WORK">كيف نعمل</span>
+      <h2 id="process-title" class="text-headline-md text-primary-container" data-en="From idea to app store in four steps">من الفكرة إلى المتجر في أربع خطوات</h2>
+    </div>
+    <ol class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <li class="reveal flex gap-4 items-start">
+        <span class="shrink-0 w-11 h-11 rounded-full bg-primary-container text-on-primary font-bold flex items-center justify-center" dir="ltr">1</span>
+        <span class="flex flex-col gap-1">
+          <span class="text-title-md text-primary-container font-bold" data-en="We listen">نسمع فكرتك</span>
+          <span class="text-body-sm text-on-surface-variant" data-en="We understand your goal and audience and define the core features.">نفهم هدفك وجمهورك ونحدد المزايا الأساسية.</span>
+        </span>
+      </li>
+      <li class="reveal flex gap-4 items-start">
+        <span class="shrink-0 w-11 h-11 rounded-full bg-secondary text-on-secondary font-bold flex items-center justify-center" dir="ltr">2</span>
+        <span class="flex flex-col gap-1">
+          <span class="text-title-md text-primary-container font-bold" data-en="We design">نصمم الواجهات</span>
+          <span class="text-body-sm text-on-surface-variant" data-en="We design the screens and agree on them with you before coding.">نرسم الشاشات ونعتمدها معك قبل البرمجة.</span>
+        </span>
+      </li>
+      <li class="reveal flex gap-4 items-start">
+        <span class="shrink-0 w-11 h-11 rounded-full bg-tertiary-container text-on-tertiary-container font-bold flex items-center justify-center" dir="ltr">3</span>
+        <span class="flex flex-col gap-1">
+          <span class="text-title-md text-primary-container font-bold" data-en="We build &amp; test">نبرمج ونختبر</span>
+          <span class="text-body-sm text-on-surface-variant" data-en="We build the website or app and test it on real devices.">نبني الموقع أو التطبيق ونختبره على الأجهزة الفعلية.</span>
+        </span>
+      </li>
+      <li class="reveal flex gap-4 items-start">
+        <span class="shrink-0 w-11 h-11 rounded-full bg-primary-container text-on-primary font-bold flex items-center justify-center" dir="ltr">4</span>
+        <span class="flex flex-col gap-1">
+          <span class="text-title-md text-primary-container font-bold" data-en="We launch &amp; support">ننشر ونتابع</span>
+          <span class="text-body-sm text-on-surface-variant" data-en="We publish it to the stores or your domain and keep it updated.">ننشره في المتاجر أو على نطاقك، ونتابعه بالتحديثات.</span>
+        </span>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="relative z-10 py-20 lg:py-28">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+    <div class="reveal lg:col-span-7 bg-surface-container-lowest p-6 sm:p-8 lg:p-10 rounded-3xl shadow-md">
+      <div class="mb-8">
+        <span class="text-label-md text-secondary font-bold" data-en="CONTACT US">تواصل معنا</span>
+        <h2 class="text-headline-md text-primary-container font-bold mt-1" data-en="Send us your trading or tech inquiry">أرسل استفسارك التجاري أو التقني</h2>
+        <p class="text-body-sm text-on-surface-variant mt-1" data-en="Tell us what you need and we'll get back to you soon.">اكتب لنا تفاصيل طلبك، وسنعود إليك في أقرب وقت.</p>
+      </div>
+      <form id="contactForm" class="flex flex-col gap-5" novalidate>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <div>
+            <label for="f-name" class="block text-label-sm text-primary-container font-bold mb-2" data-en="Full name *">الاسم الكامل *</label>
+            <input id="f-name" name="name" type="text" required autocomplete="name" placeholder="اسمك" data-en-placeholder="Your name" class="w-full h-12 px-4 rounded-xl bg-surface-container-low text-on-surface text-body-sm focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary outline-none transition-all" />
+          </div>
+          <div>
+            <label for="f-email" class="block text-label-sm text-primary-container font-bold mb-2" data-en="Email *">البريد الإلكتروني *</label>
+            <input id="f-email" name="email" type="email" required autocomplete="email" dir="ltr" placeholder="name@example.com" class="w-full h-12 px-4 rounded-xl bg-surface-container-low text-on-surface text-body-sm text-start focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary outline-none transition-all" />
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <div>
+            <label for="f-phone" class="block text-label-sm text-primary-container font-bold mb-2" data-en="Mobile number">رقم الجوال</label>
+            <input id="f-phone" name="phone" type="tel" autocomplete="tel" dir="ltr" placeholder="05xxxxxxxx" class="w-full h-12 px-4 rounded-xl bg-surface-container-low text-on-surface text-body-sm text-start focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary outline-none transition-all" />
+          </div>
+          <div>
+            <label for="f-service" class="block text-label-sm text-primary-container font-bold mb-2" data-en="Service">نوع الخدمة</label>
+            <select id="f-service" name="service" class="w-full h-12 px-4 rounded-xl bg-surface-container-low text-on-surface text-body-sm focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary outline-none transition-all">
+              <option value="app" data-en="Mobile app">تطوير تطبيق جوال</option>
+              <option value="website" data-en="Website">تصميم موقع إلكتروني</option>
+              <option value="platform" data-en="Online platform">تشغيل منصة إلكترونية</option>
+              <option value="trading" data-en="General trading &amp; supply">التجارة العامة والتوريد</option>
+              <option value="support" data-en="Support for one of our apps">دعم أحد تطبيقاتنا</option>
+              <option value="other" data-en="Other">أخرى</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label for="f-message" class="block text-label-sm text-primary-container font-bold mb-2" data-en="Message *">الرسالة *</label>
+          <textarea id="f-message" name="message" rows="4" required placeholder="اكتب تفاصيل طلبك: فكرة التطبيق، نوع الموقع، أو المنتجات المطلوبة..." data-en-placeholder="Describe your request: app idea, website type or products you need..." class="w-full p-4 rounded-xl bg-surface-container-low text-on-surface text-body-sm focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary outline-none transition-all"></textarea>
+        </div>
+        <button type="submit" class="w-full h-14 rounded-xl bg-primary-container hover:bg-secondary text-on-primary text-title-md flex items-center justify-center gap-2 transition-all shadow-[0_4px_16px_rgba(11,31,58,0.2)]">
+          <span class="material-symbols-outlined text-lg rtl:-scale-x-100" aria-hidden="true">send</span>
+          <span data-en="Send message">إرسال الرسالة</span>
+        </button>
+        <p id="formStatus" class="text-label-sm text-outline text-center" role="status" data-en="Your email app will open to send the message.">سيفتح تطبيق البريد لديك لإرسال الرسالة.</p>
+      </form>
+    </div>
+
+    <div class="lg:col-span-5 flex flex-col gap-6">
+      <div class="reveal bg-primary-container text-on-primary p-6 sm:p-8 rounded-3xl shadow-md flex flex-col gap-6">
+        <div>
+          <span class="text-tertiary-fixed text-label-sm font-bold" data-en="COMPANY DETAILS">بيانات المؤسسة</span>
+          <h3 class="text-headline-sm font-bold mt-1" data-en="Hassan Mohammed Alkubra Trading Est.">مؤسسة حسن محمد الكبرى للتجارة</h3>
+        </div>
+        <ul class="flex flex-col gap-4 text-body-sm">
+          <li class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-tertiary-container" aria-hidden="true">badge</span>
+            <span class="flex flex-col"><span class="text-xs text-inverse-primary" data-en="Trade name">الاسم التجاري</span><span class="font-bold" dir="ltr">HMK TRADING</span></span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-tertiary-container" aria-hidden="true">location_on</span>
+            <span class="flex flex-col"><span class="text-xs text-inverse-primary" data-en="Location">المقر</span><span class="font-bold" data-en="Saudi Arabia">المملكة العربية السعودية</span></span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-tertiary-container" aria-hidden="true">mail</span>
+            <span class="flex flex-col"><span class="text-xs text-inverse-primary" data-en="Email">البريد الإلكتروني</span><a class="font-bold hover:text-tertiary-fixed transition-colors" href="mailto:support@hmktrading.com" dir="ltr">support@hmktrading.com</a></span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-tertiary-container" aria-hidden="true">language</span>
+            <span class="flex flex-col"><span class="text-xs text-inverse-primary" data-en="Website">الموقع</span><a class="font-bold hover:text-tertiary-fixed transition-colors" href="https://hmktrading.com" dir="ltr">hmktrading.com</a></span>
+          </li>
+        </ul>
+      </div>
+      <div class="reveal bg-surface-container-lowest p-6 sm:p-8 rounded-3xl shadow-md">
+        <h3 class="text-title-md text-primary-container font-bold mb-4" data-en="Our app websites">مواقع تطبيقاتنا</h3>
+        <ul class="flex flex-col divide-y divide-outline-variant/30">
+          <li><a class="flex items-center gap-3 py-3 group" href="https://mycaresa.app" target="_blank" rel="noopener">
+            <img src="assets/apps/mycare-icon.jpg" alt="" width="40" height="40" class="w-10 h-10 rounded-xl" loading="lazy" />
+            <span class="flex-1 flex flex-col"><span class="font-bold text-primary-container" data-en="MY CARE">ماي كير</span><span class="text-xs text-outline" dir="ltr">mycaresa.app</span></span>
+            <span class="material-symbols-outlined text-secondary group-hover:translate-x-0.5 transition-transform" aria-hidden="true">open_in_new</span>
+          </a></li>
+          <li><a class="flex items-center gap-3 py-3 group" href="https://souq-al-ibl.expo.app" target="_blank" rel="noopener">
+            <img src="assets/apps/souq-icon.jpg" alt="" width="40" height="40" class="w-10 h-10 rounded-xl" loading="lazy" />
+            <span class="flex-1 flex flex-col"><span class="font-bold text-primary-container" data-en="Souq Al-Ibl">سوق الإبل</span><span class="text-xs text-outline" dir="ltr">souq-al-ibl.expo.app</span></span>
+            <span class="material-symbols-outlined text-secondary group-hover:translate-x-0.5 transition-transform" aria-hidden="true">open_in_new</span>
+          </a></li>
+          <li class="flex items-center gap-3 py-3">
+            <img src="assets/apps/adhan-icon.jpg" alt="" width="40" height="40" class="w-10 h-10 rounded-xl" loading="lazy" />
+            <span class="flex-1 flex flex-col"><span class="font-bold text-primary-container" data-en="Adhan &amp; Salah">الأذان والصلاة</span><span class="text-xs text-outline" data-en="Coming soon">قريباً</span></span>
+          </li>
+        </ul>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+</main>
 
-  <section id="en" class="en">
-    <div class="wrap">
-      <div class="title"><h2>Hassan Mohammed Alkubra Trading Est. (HMK TRADING)</h2></div>
-      <p style="max-width:760px; color:var(--pink); margin:0 0 12px;">A Saudi company that builds and operates mobile apps and online platforms. Our products: <strong>MY CARE</strong>, a body-and-skin care subscription that pairs each member with a certified fitness coach and a skincare specialist; and <strong>Souq Al-Ibl</strong>, a camel marketplace with transparent public auctions, fixed-price sales and transport booking.</p>
-      <p style="color:var(--gold-light); font-weight:700;">Souq Al-Ibl is on the <a href="https://apps.apple.com/sa/app/souq-al-ibl-camel-auctions/id6810638020">App Store</a>. MY CARE is coming soon to the App Store and Google Play (web: <a href="https://ndo-care.expo.app">ndo-care.expo.app</a>).</p>
-      <p style="color:var(--pink); font-size:14px;">Contact: <a href="mailto:support@hmktrading.com">support@hmktrading.com</a></p>
+<!-- ============ FOOTER ============ -->
+<footer class="bg-primary-container text-inverse-primary pt-16 pb-10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-white/10">
+      <div class="lg:col-span-4 flex flex-col gap-4">
+        <div class="flex items-center gap-3">
+          <img src="assets/logo-mark.png" alt="" width="44" height="44" class="w-11 h-11 rounded-xl ring-1 ring-white/10" loading="lazy" />
+          <span class="flex flex-col">
+            <span class="text-headline-sm text-on-primary font-bold leading-none" dir="ltr">HMK TRADING</span>
+            <span class="text-xs text-tertiary-fixed-dim mt-1" data-en="Hassan Mohammed Alkubra Trading Est.">مؤسسة حسن محمد الكبرى للتجارة</span>
+          </span>
+        </div>
+        <p class="text-body-sm max-w-sm" data-en="A Saudi establishment in general trading and website &amp; app development, building Arabic digital products people rely on.">مؤسسة سعودية تعمل في التجارة العامة وتطوير المواقع والتطبيقات، وتبني منتجات رقمية عربية يعتمد عليها الناس.</p>
+      </div>
+      <div class="lg:col-span-2 flex flex-col gap-4">
+        <h4 class="text-label-md text-on-primary font-bold" data-en="Quick links">روابط سريعة</h4>
+        <ul class="flex flex-col gap-2.5 text-body-sm">
+          <li><a class="hover:text-on-primary transition-colors" href="#hero" data-en="Home">الرئيسية</a></li>
+          <li><a class="hover:text-on-primary transition-colors" href="#about" data-en="About">عن المؤسسة</a></li>
+          <li><a class="hover:text-on-primary transition-colors" href="#business" data-en="What we do">مجالات عملنا</a></li>
+          <li><a class="hover:text-on-primary transition-colors" href="#contact" data-en="Contact">تواصل معنا</a></li>
+        </ul>
+      </div>
+      <div class="lg:col-span-2 flex flex-col gap-4">
+        <h4 class="text-label-md text-on-primary font-bold" data-en="Our apps">تطبيقاتنا</h4>
+        <ul class="flex flex-col gap-2.5 text-body-sm">
+          <li><a class="hover:text-on-primary transition-colors" href="#app-souq" data-en="Souq Al-Ibl">سوق الإبل</a></li>
+          <li><a class="hover:text-on-primary transition-colors" href="#app-mycare" data-en="MY CARE">ماي كير</a></li>
+          <li><a class="hover:text-on-primary transition-colors" href="#app-adhan" data-en="Adhan &amp; Salah">الأذان والصلاة</a></li>
+        </ul>
+      </div>
+      <div class="lg:col-span-4 flex flex-col gap-4">
+        <h4 class="text-label-md text-on-primary font-bold" data-en="Contact">تواصل</h4>
+        <ul class="flex flex-col gap-3 text-body-sm">
+          <li class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary-fixed text-base" aria-hidden="true">mail</span><a class="hover:text-on-primary transition-colors" href="mailto:support@hmktrading.com" dir="ltr">support@hmktrading.com</a></li>
+          <li class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary-fixed text-base" aria-hidden="true">location_on</span><span data-en="Saudi Arabia">المملكة العربية السعودية</span></li>
+        </ul>
+      </div>
     </div>
-  </section>
+    <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-label-sm text-inverse-primary/70">
+      <p data-en="© 2026 Hassan Mohammed Alkubra Trading Est. · HMK TRADING. All rights reserved.">© 2026 مؤسسة حسن محمد الكبرى للتجارة · HMK TRADING. جميع الحقوق محفوظة.</p>
+      <p class="tracking-widest" dir="ltr">WEBSITE &amp; APP SOLUTIONS</p>
+    </div>
+  </div>
+</footer>
 
-  <footer>
-    <div class="wrap">
-      <span>© 2026 مؤسسة حسن محمد الكبرى للتجارة · HMK TRADING. جميع الحقوق محفوظة.</span>
-      <span><a href="https://ndo-care.expo.app/privacy">الخصوصية</a><a href="https://ndo-care.expo.app/terms">الشروط</a><a href="#contact">تواصل</a></span>
-    </div>
-  </footer>
+<script>
+(function () {
+  var root = document.documentElement;
+  var META = {
+    ar: {
+      title: "HMK TRADING | مؤسسة حسن محمد الكبرى للتجارة",
+      description: "مؤسسة حسن محمد الكبرى للتجارة (HMK TRADING): مؤسسة سعودية في التجارة العامة وتصميم وبرمجة المواقع والتطبيقات، ومن تطويرها تطبيقات ماي كير وسوق الإبل والأذان والصلاة."
+    },
+    en: {
+      title: "HMK TRADING | Hassan Mohammed Alkubra Trading Est.",
+      description: "HMK TRADING is a Saudi establishment in general trading and website & app development, and the maker of MY CARE, Souq Al-Ibl and Adhan & Salah."
+    }
+  };
+  var MAIL = {
+    ar: { subject: "استفسار من موقع HMK", name: "الاسم", email: "البريد", phone: "الجوال", service: "الخدمة", sent: "فتحنا تطبيق البريد لديك. إذا لم يفتح، راسلنا مباشرة على support@hmktrading.com", invalid: "فضلاً أكمل الحقول المطلوبة." },
+    en: { subject: "Inquiry from the HMK website", name: "Name", email: "Email", phone: "Mobile", service: "Service", sent: "Your email app should now be open. If not, write to us at support@hmktrading.com", invalid: "Please fill in the required fields." }
+  };
+
+  // ---- Language switch: Arabic text lives in the markup, English in data-en* attributes ----
+  function swap(selector, enAttr, read, write) {
+    document.querySelectorAll(selector).forEach(function (el) {
+      if (el.dataset["ar" + enAttr] === undefined) el.dataset["ar" + enAttr] = read(el);
+      write(el, root.lang === "en" ? el.getAttribute("data-en" + (enAttr ? "-" + enAttr.toLowerCase() : "")) : el.dataset["ar" + enAttr]);
+    });
+  }
+  function setLang(lang) {
+    root.lang = lang;
+    root.dir = lang === "en" ? "ltr" : "rtl";
+    swap("[data-en]", "", function (el) { return el.textContent; }, function (el, v) { el.textContent = v; });
+    swap("[data-en-placeholder]", "Placeholder", function (el) { return el.placeholder; }, function (el, v) { el.placeholder = v; });
+    swap("[data-en-alt]", "Alt", function (el) { return el.alt; }, function (el, v) { el.alt = v; });
+    swap("[data-en-label]", "Label", function (el) { return el.getAttribute("aria-label"); }, function (el, v) { el.setAttribute("aria-label", v); });
+    document.title = META[lang].title;
+    document.querySelector('meta[name="description"]').setAttribute("content", META[lang].description);
+    document.querySelectorAll("[data-lang-btn]").forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.langBtn === lang)); });
+    try { localStorage.setItem("hmk-lang", lang); } catch (e) {}
+  }
+  document.querySelectorAll("[data-lang-btn]").forEach(function (b) {
+    b.addEventListener("click", function () { if (root.lang !== b.dataset.langBtn) setLang(b.dataset.langBtn); });
+  });
+  var initial = new URLSearchParams(location.search).get("lang");
+  if (!initial) { try { initial = localStorage.getItem("hmk-lang"); } catch (e) {} }
+  if (initial === "en") setLang("en");
+
+  // ---- Mobile menu ----
+  var menuBtn = document.getElementById("menuBtn");
+  var menu = document.getElementById("mobileMenu");
+  function closeMenu() { menu.classList.add("hidden"); menuBtn.setAttribute("aria-expanded", "false"); menuBtn.firstElementChild.textContent = "menu"; }
+  menuBtn.addEventListener("click", function () {
+    var open = menu.classList.toggle("hidden") === false;
+    menuBtn.setAttribute("aria-expanded", String(open));
+    menuBtn.firstElementChild.textContent = open ? "close" : "menu";
+  });
+  menu.querySelectorAll("a").forEach(function (a) { a.addEventListener("click", closeMenu); });
+
+  // ---- Active nav link + reveal on scroll ----
+  if ("IntersectionObserver" in window) {
+    var links = document.querySelectorAll(".nav-link");
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        links.forEach(function (l) {
+          var on = l.getAttribute("href") === "#" + e.target.id;
+          l.classList.toggle("is-active", on);
+          if (on) l.setAttribute("aria-current", "true"); else l.removeAttribute("aria-current");
+        });
+      });
+    }, { rootMargin: "-45% 0px -50% 0px" });
+    ["hero", "about", "business", "apps", "why-us", "contact"].forEach(function (id) { spy.observe(document.getElementById(id)); });
+
+    var reveal = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("is-visible"); reveal.unobserve(e.target); } });
+    }, { rootMargin: "0px 0px -8% 0px" });
+    document.querySelectorAll(".reveal").forEach(function (el) { reveal.observe(el); });
+  } else {
+    document.querySelectorAll(".reveal").forEach(function (el) { el.classList.add("is-visible"); });
+  }
+
+  // ---- Contact form: opens the visitor's email app addressed to support@hmktrading.com ----
+  var form = document.getElementById("contactForm");
+  var status = document.getElementById("formStatus");
+  form.addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    var t = MAIL[root.lang === "en" ? "en" : "ar"];
+    if (!form.checkValidity()) { form.reportValidity(); status.textContent = t.invalid; return; }
+    var d = new FormData(form);
+    var service = form.service.options[form.service.selectedIndex].textContent;
+    var body = [d.get("message"), "", "—", t.name + ": " + d.get("name"), t.email + ": " + d.get("email"), t.phone + ": " + (d.get("phone") || "-"), t.service + ": " + service].join("\n");
+    location.href = "mailto:support@hmktrading.com?subject=" + encodeURIComponent(t.subject + " — " + service) + "&body=" + encodeURIComponent(body);
+    status.textContent = t.sent;
+  });
+})();
+</script>
 </body>
 </html>
